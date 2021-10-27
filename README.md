@@ -5,4 +5,4 @@
 
 w >= 3 (в примере ниже: w = 14)
 
-![image]()
+![image](https://github.com/ferialops/task_5/blob/main/task5.jpg)
