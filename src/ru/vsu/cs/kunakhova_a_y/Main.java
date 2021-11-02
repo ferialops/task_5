@@ -1,4 +1,4 @@
-package u.vsu.cs.kunakhova_a_y;
+package ru.vsu.cs.kunakhova_a_y;
 
 import java.util.Scanner;
 
@@ -8,8 +8,10 @@ public class Main {
     public static void main(String[] args) {
         Locale.setDefault(Locale.ROOT);
 
-        figure(readW());
-
+        int w = readW();
+        if (w != 0) {
+            figure(w);
+        }
     }
 
     public static int readW() {
@@ -18,7 +20,7 @@ public class Main {
         int w = sc.nextInt();
         if (w <= 2) {
             System.out.println("Width can be only more than 2");
-            System.exit(1);
+            w = 0;
         }
 
         return w;
