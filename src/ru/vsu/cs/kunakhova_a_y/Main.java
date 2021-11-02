@@ -41,7 +41,7 @@ public class Main {
         System.out.println("|");
     }
 
-    public static void firstAndSecondString(int w) {
+    public static void firstAndLastString(int w) {
         System.out.print(" ");
         for (int i = 0; i < (w - 2); i++) {
             System.out.print("-");
@@ -52,7 +52,7 @@ public class Main {
     public static void figure(int w) {
         int spaces = 0;
         int exclamationMarks;
-        firstAndSecondString(w);
+        firstAndLastString(w);
         for (exclamationMarks = 1; exclamationMarks < (w - 2 - spaces); exclamationMarks++) {
             newString(w, spaces, exclamationMarks);
             spaces += exclamationMarks;
@@ -64,6 +64,6 @@ public class Main {
             spaces -= exclamationMarks;
             newString(w, spaces, exclamationMarks);
         }
-        firstAndSecondString(w);
+        firstAndLastString(w);
     }
 }
